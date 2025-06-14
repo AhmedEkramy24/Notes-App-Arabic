@@ -45,7 +45,7 @@ export default function Login() {
       setApiError("");
       localStorage.setItem("userToken", data.token);
       setUserToken(data.token);
-      navigate("/home");
+      navigate("/");
       MySwal.fire({
         title: "تم التسجيل بنجاح",
         icon: "success",
