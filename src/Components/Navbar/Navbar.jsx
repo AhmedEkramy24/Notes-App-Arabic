@@ -18,7 +18,7 @@ export default function Navbar() {
       <nav className="bg-slate-100 p-2 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 ">
         <div className="container flex justify-between items-center">
           {/* logo */}
-          <Link to={userToken ? "home" : "/login"}>
+          <Link to={userToken ? "/home" : "/login"}>
             <div className="logo flex items-center gap-4">
               <img src={logo} alt="logo" className="w-[40px]" />
               <h1 className="text-2xl font-bold">مهامي</h1>
@@ -30,10 +30,10 @@ export default function Navbar() {
               {userToken ? (
                 <>
                   <li>
-                    <NavLink to={"home"}>الصفحة الرئيسية</NavLink>
+                    <NavLink to={"/home"}>الصفحة الرئيسية</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"settings"}> الإعدادات</NavLink>
+                    <NavLink to={"/settings"}> الإعدادات</NavLink>
                   </li>
                   <p
                     className="flex items-center cursor-pointer hover:text-red-500"
@@ -48,10 +48,10 @@ export default function Navbar() {
               ) : (
                 <>
                   <li>
-                    <NavLink to={"login"}>تسجيل الدخول</NavLink>
+                    <NavLink to={"/login"}>تسجيل الدخول</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"register"}>ليس لدي حساب ؟</NavLink>
+                    <NavLink to={"/register"}>ليس لدي حساب ؟</NavLink>
                   </li>
                 </>
               )}
@@ -82,10 +82,10 @@ export default function Navbar() {
                 {userToken ? (
                   <>
                     <li className="border-b border-main dark:border-mainDark p-4">
-                      <NavLink to={"home"}>الصفحة الرئيسية</NavLink>
+                      <NavLink to={"/home"}>الصفحة الرئيسية</NavLink>
                     </li>
                     <li className="border-b border-main dark:border-mainDark p-4">
-                      <NavLink to={"settings"}> الإعدادات</NavLink>
+                      <NavLink to={"/settings"}> الإعدادات</NavLink>
                     </li>
 
                     <p
@@ -101,10 +101,10 @@ export default function Navbar() {
                 ) : (
                   <>
                     <li className="border-b border-main dark:border-mainDark p-4">
-                      <NavLink to={"login"}>تسجيل الدخول</NavLink>
+                      <NavLink to={"/login"}>تسجيل الدخول</NavLink>
                     </li>
                     <li className="border-b border-main dark:border-mainDark p-4">
-                      <NavLink to={"register"}>ليس لدي حساب ؟</NavLink>
+                      <NavLink to={"/register"}>ليس لدي حساب ؟</NavLink>
                     </li>
                   </>
                 )}
