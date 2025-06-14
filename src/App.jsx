@@ -20,7 +20,7 @@ const router = createHashRouter([
       { path: "register", element: <Register /> },
       { path: "*", element: <NotFound /> },
       {
-        path: "home",
+        path: "",
         element: (
           <ProtectedRoute>
             <Home />
